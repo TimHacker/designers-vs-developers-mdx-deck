@@ -4,7 +4,7 @@
   "description": "Learning MDX Deck: Getting Started",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx && cp -r /images /dist/images",
+    "build": "mdx-deck build deck.mdx && cpy 'images/*' dist/images",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dave Follett",
@@ -12,5 +12,7 @@
   "devDependencies": {
     "mdx-deck": "^2.5.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cpy-cli": "^2.0.0"
+  }
 }
