@@ -5,8 +5,7 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx && cpy 'images/*' dist/images",
-    "postbuild": "build:pdf",
-    "build:pdf": "mdx-deck pdf deck.js",
+    "build:pdf": "mdx-deck pdf deck.mdx",
     "help": "mdx-deck"
   },
   "author": "Tim Hacker",
