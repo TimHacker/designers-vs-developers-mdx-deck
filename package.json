@@ -1,18 +1,19 @@
 {
-  "name": "learning-mdx-deck-getting-started",
+  "name": "designers-vs-developers-slides",
   "version": "1.0.0",
-  "description": "Learning MDX Deck: Getting Started",
+  "description": "Designers vs Developers: Can't we all just get along?",
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx && cpy 'images/*' dist/images",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postbuild": "build:pdf",
+    "build:pdf": "mdx-deck pdf deck.js",
+    "help": "mdx-deck"
   },
-  "author": "Dave Follett",
+  "author": "Tim Hacker",
   "license": "MIT",
   "devDependencies": {
-    "mdx-deck": "^2.5.0"
-  },
-  "dependencies": {
+    "@mdx-deck/themes": "^3.0.8",
+    "mdx-deck": "^3.0.11",
     "cpy-cli": "^2.0.0"
   }
 }
