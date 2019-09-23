@@ -4,7 +4,7 @@
   "description": "Designers vs Developers: Can't we all just get along?",
   "scripts": {
     "start": "mdx-deck deck.mdx",
-    "build": "mdx-deck build deck.mdx && cpy 'images/*' dist/images",
+    "build": "mdx-deck build deck.mdx",
     "build:pdf": "mdx-deck pdf deck.mdx",
     "help": "mdx-deck"
   },
@@ -12,7 +12,6 @@
   "license": "MIT",
   "devDependencies": {
     "@mdx-deck/themes": "^3.0.8",
-    "mdx-deck": "^3.0.11",
-    "cpy-cli": "^2.0.0"
+    "mdx-deck": "^3.0.11"
   }
 }
