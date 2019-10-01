@@ -5,7 +5,7 @@
   "scripts": {
     "start": "mdx-deck deck.mdx",
     "build": "mdx-deck build deck.mdx",
-    "build:pdf": "mdx-deck pdf deck.mdx",
+    "build:pdf": "npx website-pdf http://localhost:8000/print -o TimHacker-designers-vs-developers.pdf",
     "help": "mdx-deck"
   },
   "author": "Tim Hacker",
